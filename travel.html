@@ -1,0 +1,171 @@
+<!-- travel.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Travel Agency</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+  <style>
+    .hero {
+      background: url('https://media.istockphoto.com/id/477372378/photo/travel-collage-world-images.jpg?s=612x612&w=0&k=20&c=f58flJv08W5A9NAn2t4XFmd8Z_T2UwNc8dPdK-xkxc8=') no-repeat center center/cover;
+      height: 80vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      text-align: center;
+    }
+    .hero h1 { font-size: 3rem; }
+  </style>
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+    <div class="container">
+      <a class="navbar-brand" href="#">Travel Agency</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#destinations">Destinations</a></li>
+          <li class="nav-item"><a class="nav-link" href="#tours">Tours</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <div class="hero">
+    <div>
+      <h1>Explore the World with Us</h1>
+      <p>Your adventure starts here</p>
+      <a href="#destinations" class="btn btn-light btn-lg">Discover Destinations</a>
+    </div>
+  </div>
+
+  <!-- Destinations Section -->
+  <section id="destinations" class="py-5">
+    <div class="container">
+      <h2 class="text-center mb-4">Top Destinations</h2>
+      <div class="row">
+        <div class="col-md-4">
+          <div class="card">
+            <img src="https://cdn.britannica.com/31/255531-050-B7E07090/eiffel-tower-paris-france-champ-de-mars-view.jpg" class="w-100 h-100 object-fit-cover rounded-top" alt="Paris">
+            <div class="card-body">
+              <h5 class="card-title">Paris</h5>
+              <p class="card-text">Experience the city of lights and romance.</p>
+              <a href="#" class="btn btn-primary">Learn More</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card">
+            <img src="https://thetravelexpert.ie/wp-content/uploads/2021/03/10.-Soneva-Jani.-1.jpg" class="w-100 h-100 object-fit-cover rounded-top" alt="Maldives">
+            <div class="card-body">
+              <h5 class="card-title">Maldives</h5>
+              <p class="card-text">Relax on pristine beaches with crystal-clear waters.</p>
+              <a href="#" class="btn btn-primary">Learn More</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card">
+            <img src="https://s1.it.atcdn.net/wp-content/uploads/2015/11/shutterstock_279572969.jpg" class="w-100 h-100 object-fit-cover rounded-top" alt="Swiss Alps">
+            <div class="card-body">
+              <h5 class="card-title">Swiss Alps</h5>
+              <p class="card-text">Adventure awaits in the breathtaking mountains.</p>
+              <a href="#" class="btn btn-primary">Learn More</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Tours Section -->
+  <section id="tours" class="py-5 bg-light">
+    <div class="container">
+      <h2 class="text-center mb-4">Our Tours</h2>
+      <div class="accordion" id="toursAccordion">
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingOne">
+            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne">
+              European Highlights
+            </button>
+          </h2>
+          <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#toursAccordion">
+            <div class="accordion-body">
+                Embark on a journey through Europe’s most iconic cities. From the romantic streets of Paris, the historical wonders of Rome, to the vibrant culture of Barcelona, our guided tours let you soak in centuries of history, art, and cuisine, all in one unforgettable trip. Perfect for travelers seeking a mix of culture, adventure, and relaxation. <a href="#">View Details</a>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingTwo">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo">
+              Tropical Escapes
+            </button>
+          </h2>
+          <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#toursAccordion">
+            <div class="accordion-body">
+                Leave your worries behind and escape to paradise. Bask in the sun on the white sandy beaches of the Maldives, explore hidden lagoons in Bali, or snorkel through vibrant coral reefs in the Caribbean. These tours are designed for those who crave tranquility, romance, and the pure bliss of nature’s beauty. <a href="#">View Details</a>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingThree">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree">
+              Mountain Adventures
+            </button>
+          </h2>
+          <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#toursAccordion">
+            <div class="accordion-body">
+                If adrenaline and breathtaking views are what you seek, our mountain adventures are for you. Trek through the majestic Swiss Alps, conquer the peaks of the Himalayas, or ski down the slopes of the Rockies. Experience crisp mountain air, thrilling activities, and the serenity of nature at its finest. <a href="#">View Details</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="py-5">
+    <div class="container">
+      <h2 class="text-center mb-4">Contact Us</h2>
+      <form class="w-75 mx-auto">
+        <div class="mb-3">
+          <label for="name" class="form-label">Name</label>
+          <input type="text" class="form-control" id="name">
+        </div>
+        <div class="mb-3">
+          <label for="email" class="form-label">Email</label>
+          <input type="email" class="form-control" id="email">
+        </div>
+        <div class="mb-3">
+          <label for="destination" class="form-label">Destination of Interest</label>
+          <input type="text" class="form-control" id="destination">
+        </div>
+        <div class="mb-3">
+          <label for="message" class="form-label">Message</label>
+          <textarea class="form-control" id="message" rows="4"></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-primary text-white text-center py-3">
+    <p>&copy; 2025 GOMYCODE Travel Agency | Follow us on
+      <a href="#" class="text-white ms-2">Facebook</a>
+      <a href="#" class="text-white ms-2">Instagram</a>
+      <a href="#" class="text-white ms-2">Twitter</a>
+    </p>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
